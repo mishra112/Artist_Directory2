@@ -1,0 +1,34 @@
+hello this is users show page
+welcome, <%= @user.name %>
+
+
+
+
+
+
+
+<div class="container space">
+
+<div class="row">
+  <div class="col-sm-6">
+    <p class="welcome">Welcome</p>
+    <p><%= @user.email  %></p>
+  </div>
+  <div class="col-sm-6">
+    <p><%= @user.name  %>
+  </div>
+
+
+</div>
+
+
+<div class="row">
+  <h2>Your Favourite Artists</h2>
+  <%# space for all comments and ratings %>
+
+</div>
+<div class="row">
+  <div class="user"><%= link_to 'Edit Account', edit_user_path(@user) %></div>
+  <div class="user"><%= link_to 'Delete Account', @user, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+</div>
+</div>
